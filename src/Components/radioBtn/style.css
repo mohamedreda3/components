@@ -1,0 +1,27 @@
+.mr_radios {
+    width: 100%;
+    cursor: pointer;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mr_radios_rtl{
+    justify-content: flex-start;
+
+}
+span.mr_chckBox_radios.checked {
+    background-color: var(--checked-color);
+
+}
+
+span.mr_chckBox_radios {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    border: .1px solid var(--checked-color);
+    transition: .6s ease-in-out;
+}
