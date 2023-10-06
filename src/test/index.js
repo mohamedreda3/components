@@ -19,7 +19,10 @@ function Test() {
   const getCases = async () => {
     await axios
       .post("https://graduation-project-way2.vercel.app/cases/all")
-      .then((res) => setData(res.data.cases));
+      .then((res) => {
+        setData(res.data.cases);
+        console.log(res.data.cases);
+      });
   };
   // Table Data
   const columns = [
